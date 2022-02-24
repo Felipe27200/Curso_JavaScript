@@ -1,0 +1,19 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipe27200/Curso_JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felipe27200/Curso_JavaScript/issues"
+  },
+  "homepage": "https://github.com/Felipe27200/Curso_JavaScript#readme",
+  "description": ""
+}
