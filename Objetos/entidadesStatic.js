@@ -1,9 +1,35 @@
 class Persona
 {
+    // Declarar una VS para la clase
+    static contadorObjetosPersonas = 0;
+
+    // Declarar una Vi
+    email = "Valor por default para el email"
+
+    // Simular una constante estática
+    /*
+        Como tal no es posible crear una constante
+        estática en JS, para esto se usa alternativamente
+        un método get estático.
+
+        Se usaría para simular el máximo de objetos que 
+        puede haber de la jerarquía persona.
+    */
+    static get MAX_OBJ(){
+        return 5;
+    }
+
     constructor (nombre, apellido)
     {
         this._nombre = nombre;
         this._apellido = apellido;
+
+        // Acceder a la VS de la clase, desde el constructor
+        /*
+            Se debe acceder por medio del nombre de la clase
+        */
+        if (Persona.contadorObjetosPersonas < Persona.MAX_OBJ)
+            Persona.contadorObjetosPersonas++;
     }
 
     get nombre(){
@@ -96,3 +122,10 @@ Persona.recibirObjeto(persona)
 */
 Empleado.saludar()
 Empleado.recibirObjeto(empleado)
+
+// Todas las instancias de la jerarquía comparten el mismo
+// valor para las VS
+console.log(Persona.contadorObjetosPersonas)
+console.log(Empleado.contadorObjetosPersonas)
+
+console.log(persona.email)
