@@ -74,6 +74,8 @@ agregarElementosArray("Longitud mínima del input después de modificarlo", inpu
 
 generarLista(4);
 
+vaciarArray();
+
 // <<< Métodos para generar la lista >>>
 function generarLista(numeroInput) {
     document.write(
