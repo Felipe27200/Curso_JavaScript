@@ -34,3 +34,8 @@ document.write("<br><br>Primer elemento con la clase parrafo: " + querySelector)
 let selectorId = document.querySelector("#rancio");
 
 document.write("<br>Primer elemento con el id rancio: " + selectorId)
+
+let querySelectorAll = document.querySelectorAll(".parrafo");
+
+document.write("<br><br>Todos los elementos con el selector .parrafo: " + querySelectorAll.length);
+document.write("<br>Primer elemento con la clase parrafo: " + querySelectorAll[0])
