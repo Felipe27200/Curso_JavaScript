@@ -18,8 +18,6 @@ agregarElementosArray("Valor", input1.value)
 
 generarLista(1)
 
-vaciarArray();
-
 let input2 = document.getElementById("input2");
 
 agregarElementosArray("Valor del atributo type antes de modificarlo", input2.type)
@@ -33,8 +31,6 @@ input2.type = "range";
 agregarElementosArray("Valor del atributo type después de modificarlo", input2.type)
 
 generarLista(2)
-
-vaciarArray()
 
 /*
     Con la propiedad accept definimos que valores son los
@@ -54,8 +50,6 @@ input3.accept = "image/gif";
 agregarElementosArray("Valor de type después de modificar accept", input3.accept)
 
 generarLista(3);
-
-vaciarArray();
 
 /*
     DEFINIR LA LONGITUD MÍNIMA 
@@ -85,6 +79,8 @@ function generarLista(numeroInput) {
         </ul>
         `
     )
+
+    vaciarArray();
 }
 
 function concatenarItemsLista(){
