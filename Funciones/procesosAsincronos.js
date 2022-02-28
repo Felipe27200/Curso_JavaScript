@@ -5,7 +5,7 @@ function funcionCallBack()
 
 /*
     Esta función establece que la función (callback) 
-    que recibe como primer argumneto, se ejecutará 
+    que recibe como primer argumento, se ejecutará 
     después de un tiempo determinado, el cual se pasa
     como segundo argumento.
 
