@@ -70,6 +70,18 @@ generarLista(4);
 
 vaciarArray();
 
+/*
+    Asignarle un placeholder al input
+*/
+input4.placeholder = "texto de prueba";
+
+// Definir el input como requerido
+/*
+    Puede recibir cualquier valor, con tal de que no sea
+    una cadena vacía.
+*/
+input4.required = " ";
+
 // <<< Métodos para generar la lista >>>
 function generarLista(numeroInput) {
     document.write(
@@ -106,4 +118,29 @@ function agregarElementosArray(texto, valor)
 
 function vaciarArray(){
     lista.length = 0;
+}
+
+function obtenerElementoId($identificador)
+{
+    return document.getElementById($identificador);
+}
+
+function obtenerElementoName($identificador)
+{
+    return document.getElementByName($identificador);
+}
+
+function obtenerElementoQuerySelector($identificador)
+{
+    return document.querySelector($identificador);
+}
+
+function obtenerElementoQueryAll($identificador)
+{
+    return document.querySelectorAll($identificador);
+}
+
+function obtenerElementoTags($identificador)
+{
+    return document.getElementsByTagName($identificador);
 }
