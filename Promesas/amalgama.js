@@ -6,6 +6,7 @@ async function funcionConPromesaAwaitYTimeaout()
         setTimeout(() => resolved('promesa con await y timeout'), 3000);
     });
 
+    // console.log(miPromesa.then(valor => console.log(valor)))
     console.log(await miPromesa)
 
     /*
