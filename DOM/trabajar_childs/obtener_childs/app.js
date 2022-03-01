@@ -63,3 +63,5 @@ console.log(h2_nuevo.nextElementSibling)
 
 console.log("Obtener el sibling html anterior inmediato a h2: ")
 console.log(h2_nuevo.previousElementSibling)
+
+// OBTENER AL PADRE INMEDIATO
