@@ -21,6 +21,7 @@ console.log("La ventana está cerrada: " + ventana.closed)
     el proceso, para luego poder imprimir el valor de
     closed, después de que la promesa haya finalizado.
 */
+
 async function cerrarVentana(){
     let promesa = new Promise (resolved => {
         setTimeout(() => resolved(ventana.close()), 3000);
@@ -31,4 +32,6 @@ async function cerrarVentana(){
     console.log("La ventana está cerrada: "+ ventana.closed)
 }
 
+// confirm("Está seguro que quiere cerrar YouTube?")
+// if (confirm("Está seguro que quiere cerrar YouTube?"))
 cerrarVentana();
