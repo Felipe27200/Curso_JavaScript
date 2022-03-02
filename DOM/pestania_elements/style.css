@@ -1,0 +1,22 @@
+body{
+    color: #222;
+    font-family: sans-serif;
+}
+
+div {
+    background-color: #000;
+    padding: 20px;
+}
+
+h2 {
+    color: #FFF;
+}
+
+P {
+    color: #CCC;
+}
+
+/* Definir los estilos para un elemento hijo concreto */
+body > div > p {
+    background: black;
+}
