@@ -2,7 +2,7 @@
     No es necesario que la promesa reciba un callback
     para el rejected.
 */
-let promesa =   new Promise((resolver) => {
+let promesa = new Promise((resolver) => {
     console.log("Inicio promesa")
 
     /*
